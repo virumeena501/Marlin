@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>VIP CHANNEL Marlin</title>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1383689737273670');
+fbq('track','PageView');
+</script>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  background:#08090d;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.card{
+  width:100%;
+  max-width:430px;
+  background:linear-gradient(180deg,#171922,#0d0f15);
+  border:1px solid #292d38;
+  border-radius:26px;
+  padding:28px 20px 22px;
+  text-align:center;
+  box-shadow:0 20px 70px rgba(0,0,0,.5);
+}
+
+/* DP */
+.dp{
+  width:105px;
+  height:105px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:0 auto 16px;
+  border:3px solid #fff;
+  box-shadow:0 8px 30px rgba(0,0,0,.45);
+}
+
+.title{
+  font-size:27px;
+  font-weight:800;
+  margin-bottom:7px;
+}
+
+.verified{
+  color:#4b86ff;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.subscribers{
+  color:#a7abb5;
+  font-size:15px;
+  margin-bottom:23px;
+}
+
+.box{
+  background:#101219;
+  border:1px solid #292d38;
+  border-radius:19px;
+  padding:20px;
+}
+
+.box h2{
+  font-size:19px;
+  margin-bottom:10px;
+}
+
+.desc{
+  color:#aeb2bd;
+  font-size:14px;
+  line-height:1.55;
+  margin-bottom:17px;
+}
+
+.item{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  text-align:left;
+  margin:10px 0;
+  color:#e1e3e8;
+  font-size:14px;
+}
+
+.icon{
+  width:31px;
+  height:31px;
+  border-radius:9px;
+  background:#1b2b4c;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.join{
+  display:block;
+  width:100%;
+  margin-top:19px;
+  padding:16px;
+  border-radius:15px;
+  background:#2f7cff;
+  color:#fff;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:800;
+  box-shadow:0 9px 25px rgba(47,124,255,.25);
+}
+
+.join:active{
+  transform:scale(.98);
+}
+
+.note{
+  color:#777d89;
+  font-size:11px;
+  line-height:1.4;
+  margin-top:12px;
+}
+
+.footer{
+  color:#626773;
+  font-size:11px;
+  margin-top:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <div class="card">
+
+    <!-- DP IMAGE EMBEDDED DIRECTLY -->
+    <img
+      class="dp"
+      alt="VIP CHANNEL Marlin"
+      src="data:image/jpeg;base64,REPLACE_WITH_IMAGE_BASE64"
+    >
+
+    <div class="title">
+      VIP CHANNEL Marlin
+    </div>
+
+    <div class="verified">
+      ✓ Official Channel
+    </div>
+
+    <div class="subscribers">
+      27,102 Subscribers
+    </div>
+
+    <div class="box">
+
+      <h2>ONLY FOR VIP MEMBERS</h2>
+
+      <p class="desc">
+        Join the official Telegram channel to receive
+        the latest channel updates and member posts.
+      </p>
+
+      <div class="item">
+        <div class="icon">🔔</div>
+        <span>Latest channel updates</span>
+      </div>
+
+      <div class="item">
+        <div class="icon">📢</div>
+        <span>Member-only posts</span>
+      </div>
+
+      <div class="item">
+        <div class="icon">🔒</div>
+        <span>VIP channel access</span>
+      </div>
+
+      <a
+        id="joinBtn"
+        class="join"
+        href="https://t.me/+dy1DTFyB-PZmMmRl"
+      >
+        JOIN ON TELEGRAM →
+      </a>
+
+      <div class="note">
+        You will be redirected to Telegram.
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Please follow the laws and platform rules applicable to you.
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+document.getElementById("joinBtn").addEventListener("click",function(){
+  if(typeof fbq === "function"){
+    fbq("track","Lead");
+  }
+});
+</script>
+
+</body>
+</html>
