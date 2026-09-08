@@ -2,21 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VIP CHANNEL Marlin</title>
 
 <!-- Meta Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window,document,'script',
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);
+t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init','1383689737273670');
@@ -24,120 +19,115 @@ fbq('track','PageView');
 </script>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box}
 
 body{
-  min-height:100vh;
-  background:#08090d;
+  margin:0;
+  background:#070b13;
   color:#fff;
   font-family:Arial,Helvetica,sans-serif;
 }
 
 .page{
   min-height:100vh;
+  padding:22px;
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:20px;
 }
 
 .card{
   width:100%;
-  max-width:430px;
-  background:linear-gradient(180deg,#171922,#0d0f15);
-  border:1px solid #292d38;
-  border-radius:26px;
+  max-width:440px;
   padding:28px 20px 22px;
+  border:1px solid #1e74ff;
+  border-radius:28px;
+  background:linear-gradient(180deg,#101827,#070b12);
+  box-shadow:0 0 45px rgba(0,100,255,.18);
   text-align:center;
-  box-shadow:0 20px 70px rgba(0,0,0,.5);
 }
 
-/* DP */
 .dp{
-  width:105px;
-  height:105px;
+  width:108px;
+  height:108px;
   border-radius:50%;
   object-fit:cover;
-  display:block;
-  margin:0 auto 16px;
   border:3px solid #fff;
-  box-shadow:0 8px 30px rgba(0,0,0,.45);
+  box-shadow:0 0 28px rgba(0,130,255,.45);
+  display:block;
+  margin:auto;
 }
 
-.title{
-  font-size:27px;
-  font-weight:800;
-  margin-bottom:7px;
+h1{
+  font-size:29px;
+  margin:17px 0 8px;
 }
+
+.blue{color:#12b8ff}
 
 .verified{
-  color:#4b86ff;
+  color:#8ebcff;
   font-size:14px;
-  margin-bottom:8px;
 }
 
-.subscribers{
-  color:#a7abb5;
-  font-size:15px;
-  margin-bottom:23px;
+.subs{
+  color:#aeb6c5;
+  margin-top:8px;
+  margin-bottom:25px;
 }
 
 .box{
-  background:#101219;
-  border:1px solid #292d38;
-  border-radius:19px;
-  padding:20px;
+  border:1px solid #20365e;
+  background:#0b111c;
+  border-radius:20px;
+  padding:21px;
+  text-align:left;
 }
 
-.box h2{
-  font-size:19px;
-  margin-bottom:10px;
+h2{
+  font-size:20px;
+  text-align:center;
+  margin:0 0 13px;
 }
 
 .desc{
-  color:#aeb2bd;
+  color:#b9c1ce;
+  text-align:center;
+  line-height:1.5;
   font-size:14px;
-  line-height:1.55;
-  margin-bottom:17px;
 }
 
 .item{
   display:flex;
+  gap:12px;
   align-items:center;
-  gap:11px;
-  text-align:left;
-  margin:10px 0;
-  color:#e1e3e8;
+  margin:14px 0;
+  color:#e8edf5;
   font-size:14px;
 }
 
 .icon{
-  width:31px;
-  height:31px;
-  border-radius:9px;
-  background:#1b2b4c;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  background:#082c66;
+  display:grid;
+  place-items:center;
+  flex:none;
 }
 
 .join{
   display:block;
-  width:100%;
-  margin-top:19px;
-  padding:16px;
-  border-radius:15px;
-  background:#2f7cff;
-  color:#fff;
+  margin-top:20px;
+  padding:17px;
+  border-radius:16px;
   text-decoration:none;
-  font-size:17px;
+  text-align:center;
   font-weight:800;
-  box-shadow:0 9px 25px rgba(47,124,255,.25);
+  font-size:17px;
+  color:#fff;
+  background:linear-gradient(90deg,#0878ff,#13b8ff);
+  box-shadow:0 10px 30px rgba(0,125,255,.35);
 }
 
 .join:active{
@@ -145,15 +135,15 @@ body{
 }
 
 .note{
-  color:#777d89;
   font-size:11px;
-  line-height:1.4;
+  color:#737d8d;
+  text-align:center;
   margin-top:12px;
 }
 
 .footer{
-  color:#626773;
   font-size:11px;
+  color:#657082;
   margin-top:18px;
 }
 </style>
@@ -162,77 +152,75 @@ body{
 <body>
 
 <div class="page">
+<div class="card">
 
-  <div class="card">
+<!-- DP embedded inside HTML -->
+<img
+class="dp"
+src="data:image/jpeg;base64,REPLACE_WITH_YOUR_EMBEDDED_DP"
+alt="VIP CHANNEL Marlin"
+>
 
-    <!-- DP IMAGE EMBEDDED DIRECTLY -->
-    <img
-      class="dp"
-      alt="VIP CHANNEL Marlin"
-      src="data:image/jpeg;base64,file_00000000ca88821192bcbca52671bfbc.png"
-    >
+<h1>
+VIP CHANNEL <span class="blue">Marlin</span>
+</h1>
 
-    <div class="title">
-      VIP CHANNEL Marlin
-    </div>
+<div class="verified">✓ Official Channel</div>
 
-    <div class="verified">
-      ✓ Official Channel
-    </div>
+<div class="subs">
+27,102 Subscribers
+</div>
 
-    <div class="subscribers">
-      27,102 Subscribers
-    </div>
+<div class="box">
 
-    <div class="box">
+<h2>
+👑 ONLY FOR <span class="blue">VIP MEMBERS</span>
+</h2>
 
-      <h2>ONLY FOR VIP MEMBERS</h2>
+<p class="desc">
+Join the official Telegram channel to receive
+the latest channel updates and member posts.
+</p>
 
-      <p class="desc">
-        Join the official Telegram channel to receive
-        the latest channel updates and member posts.
-      </p>
+<div class="item">
+<div class="icon">🔔</div>
+<span>Latest channel updates</span>
+</div>
 
-      <div class="item">
-        <div class="icon">🔔</div>
-        <span>Latest channel updates</span>
-      </div>
+<div class="item">
+<div class="icon">📢</div>
+<span>Member-only posts</span>
+</div>
 
-      <div class="item">
-        <div class="icon">📢</div>
-        <span>Member-only posts</span>
-      </div>
+<div class="item">
+<div class="icon">🔒</div>
+<span>VIP channel access</span>
+</div>
 
-      <div class="item">
-        <div class="icon">🔒</div>
-        <span>VIP channel access</span>
-      </div>
+<a
+id="joinBtn"
+class="join"
+href="https://t.me/+dy1DTFyB-PZmMmRl"
+>
+✈ JOIN ON TELEGRAM →
+</a>
 
-      <a
-        id="joinBtn"
-        class="join"
-        href="https://t.me/+dy1DTFyB-PZmMmRl"
-      >
-        JOIN ON TELEGRAM →
-      </a>
+<div class="note">
+You will be redirected to Telegram.
+</div>
 
-      <div class="note">
-        You will be redirected to Telegram.
-      </div>
+</div>
 
-    </div>
+<div class="footer">
+Please follow applicable laws and platform rules.
+</div>
 
-    <div class="footer">
-      Please follow the laws and platform rules applicable to you.
-    </div>
-
-  </div>
-
+</div>
 </div>
 
 <script>
 document.getElementById("joinBtn").addEventListener("click",function(){
-  if(typeof fbq === "function"){
+  if(typeof fbq==="function"){
     fbq("track","Lead");
   }
 });
